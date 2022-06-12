@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+    --white: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 75%;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+    margin: 30px auto;
+    width: max-content;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--VeryDarkBlue);
+}
+
+p {
+    color: var(--VeryDarkBlue);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 20px auto;
+}
+
+.thin {
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.input {
+    display: block;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
+}
+
+input[type="email"] {
+    width: 70%;
+    padding: 13px 25px;
+    border-radius: 28px;
+    border: 1.5px solid var(--Blue);
+    margin-right: 30px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border: 1.5px solid var(--Blue);
+}
+
+button {
+    padding: 13px 40px;
+    border-radius: 28px;
+    background-color: var(--Blue);
+    border: 1.5px solid var(--Blue);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.err {
+    color: var(--LightRed);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    text-align: left;
+    display: none;
+    margin-left: 35px;
+}
+
+.dashboard {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+}
+
+.block {
+    margin: 50px auto;
+}
+
+.block i {
+    font-size: 1.5rem;
+    margin: 0 5px;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--Blue);
+    box-sizing: border-box;
+}
+
+.block i:hover {
+    color: var(--white);
+    background-color: var(--Blue);
+}
+
+.block p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width:790px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+        margin: 15px auto;
+    }
+    .input {
+        width: 100%;
+    }
+    input[type="email"] {
+        width: 100%;
+        margin-right: 0px;
+    }
+    button {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .err {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+}
