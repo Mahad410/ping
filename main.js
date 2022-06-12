@@ -1,8 +1,6 @@
 const btn = document.getElementById('btn');
 const err = document.getElementById('err');
 const input = document.getElementById('email');
-console.log(btn);
-console.log(err);
 email.addEventListener('focus', () => {
     err.style.display = 'none';
     input.style.border = '1.5px solid var(--Blue)';
@@ -16,7 +14,6 @@ email.addEventListener('focusout', () => {
     } else {
         errMsg.style.display = 'none';
     }
-    console.log(email.value);
 })
 btn.addEventListener('click', () => {
     if (email.value == null || email.value == undefined || email.value == '' || (email.value.indexOf('@') == -1)) {
